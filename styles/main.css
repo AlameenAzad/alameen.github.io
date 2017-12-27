@@ -65,7 +65,7 @@ html {
 }
 
 .main h1 {
-    font-family: Alexana Neue;
+    font-family: alexana;
     letter-spacing: 3px;
     font-size: 22px;
 
@@ -424,11 +424,11 @@ a.fb-message-blue:focus {
 /*End social media icons*/
 
 @font-face {
-    font-family: 'alexana_neueregular';
+    font-family: 'alexana';
     src: url('fonts/alexana_neue-webfont.ttf') format('ttf'),
-        url('alexana_neue-webfont.svg') format('svg'),
-        url('alexana_neue-webfont.woff2') format('woff2'),
-         url('alexana_neue-webfont.woff') format('woff');
+        url('fonts/alexana_neue-webfont.svg') format('svg'),
+        url('fonts/alexana_neue-webfont.woff2') format('woff2'),
+         url('fonts/alexana_neue-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
