@@ -333,11 +333,11 @@ a.fb-message-blue:focus {
 
 @font-face {
   font-family: 'social';
-  src:  url('../fonts/social.eot?qrg5m2');
-  src:  url('../fonts/social.eot?qrg5m2#iefix') format('embedded-opentype'),
-    url('../fonts/social.ttf?qrg5m2') format('truetype'),
-    url('../fonts/social.woff?qrg5m2') format('woff'),
-    url('../fonts/social.svg?qrg5m2#social') format('svg');
+  src:  url('fonts/social.eot?qrg5m2');
+  src:  url('fonts/social.eot?qrg5m2#iefix') format('embedded-opentype'),
+    url('fonts/social.ttf?qrg5m2') format('truetype'),
+    url('fonts/social.woff?qrg5m2') format('woff'),
+    url('fonts/social.svg?qrg5m2#social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -403,3 +403,12 @@ a.fb-message-blue:focus {
 
 /*End social media icons*/
 
+@font-face {
+    font-family: 'alexana_neueregular';
+    src: url('fonts/alexana_neue-webfont.ttf');
+    src: url('alexana_neue-webfont.woff2') format('woff2'),
+         url('alexana_neue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
