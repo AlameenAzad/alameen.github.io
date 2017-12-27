@@ -422,14 +422,3 @@ a.fb-message-blue:focus {
 }
 
 /*End social media icons*/
-
-@font-face {
-    font-family: 'alexana';
-    src: url('fonts/alexana_neue-webfont.ttf') format('truetype'),
-        url('fonts/alexana_neue-webfont.svg') format('svg'),
-        url('fonts/alexana_neue-webfont.woff2') format('woff2'),
-         url('fonts/alexana_neue-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
