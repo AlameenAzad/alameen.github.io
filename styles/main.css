@@ -18,9 +18,10 @@ html {
     background: linear-gradient(to left, #012F50, #003459);
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+/*    overflow-x: hidden;*/
 }
-
+body{padding: 0;
+    margin: 0;}
 
 .txtshadow {
 
@@ -42,9 +43,10 @@ html {
 
 .main {
     padding: 0 0% 0 0%;
-    overflow: hidden;
+    overflow-x: hidden;
     /*    height: 90vh;*/
     /*    width: 10vw;*/
+    position: relative;
     
 }
 
@@ -55,15 +57,15 @@ html {
     left: 0px;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 600px;
     z-index: -1;
     opacity: 0.14;
     background-image: url(../pic/Capture.JPG);
     background-repeat: no-repeat;
 /*    check if with no repeat it would look better.*/
     background-position: 20% 0;
-    -webkit-filter: blur(6px);
-    filter: blur(6px);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
     background-size: cover;
 }
 
