@@ -461,7 +461,7 @@ a.fb-message-blue:focus {
     -webkit-transform: rotate(39deg) translate(40px,-15px);
     transform: rotate(39deg) translate(40px,-15px);
     position: absolute;
-    width: 300px;
+    width: 77%;
     height: 475px;
     top: -25vh;
     background: -webkit-gradient(linear,left top, left bottom,from(#011E34), to(#013C67));
