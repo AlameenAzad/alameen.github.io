@@ -98,7 +98,7 @@ body{padding: 0;
 }
 
 .intro{
-    margin-top: 15vh;
+    margin-top: 20vh;
     line-height: 30px;
 /*    overflow: hidden*/
 }
@@ -450,7 +450,7 @@ a.fb-message-blue:focus {
     width: calc(90px - 1vw);
     height: 30px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 40vh;
 }
 .ctoa a{
@@ -458,8 +458,8 @@ a.fb-message-blue:focus {
     
 }
 .gradshape {
-    -webkit-transform: rotate(39deg) translate(40px,-15px);
-    transform: rotate(39deg) translate(40px,-15px);
+    -webkit-transform: rotate(39deg) translate(70px,-15px);
+    transform: rotate(39deg) translate(70px,10px);
     position: absolute;
     width: 77%;
     height: 475px;
@@ -475,8 +475,8 @@ a.fb-message-blue:focus {
     left: 0;
 }
 .gradeshapeflip{
-    -webkit-transform: rotate(310deg) translate(-60px,-55px);
-    transform: rotate(310deg) translate(-60px,-55px);
+    -webkit-transform: rotate(310deg) translate(-90px,-25px);
+    transform: rotate(310deg) translate(-90px,-35px);
     transition: all 1s ease;
 }
 .gradeshape2{ top: -18vh; z-index: -2; background: -webkit-gradient(linear,left top, left bottom,from(#01365E), to(#012E50)); background: linear-gradient(to bottom,#01365E, #012E50); }
