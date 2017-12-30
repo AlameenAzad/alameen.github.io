@@ -50,6 +50,7 @@ body{padding: 0;
     
 }
 
+
 .main:before {
     content: ' ';
     display: block;
