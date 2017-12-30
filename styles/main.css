@@ -98,7 +98,7 @@ body{padding: 0;
 }
 
 .intro{
-    margin-top: 27vh;
+    margin-top: 140px;
     line-height: 30px;
 /*    overflow: hidden*/
 }
@@ -463,7 +463,7 @@ a.fb-message-blue:focus {
     position: absolute;
     width: 280px;
     height: 550px;
-    top: -30vh;
+    top: -190px;
     background: -webkit-gradient(linear,left top, left bottom,from(#011E34), to(#013C67));
     background: linear-gradient(to bottom,#011E34, #013C67);
     border-radius: 50px;
@@ -479,9 +479,9 @@ a.fb-message-blue:focus {
     transform: rotate(310deg) translate(-120px,-50px);
     transition: all 1s ease;
 }
-.gradeshape2{ top: -20vh; z-index: -2; background: -webkit-gradient(linear,left top, left bottom,from(#01365E), to(#012E50)); background: linear-gradient(to bottom,#01365E, #012E50); }
-.gradeshape3{ top: -16vh; z-index: -3; background: -webkit-gradient(linear, left top, left bottom, from(#0084FF),to(#0084FF)); background: linear-gradient(to bottom, #0084FF,#0084FF);}
-.gradeshape4{ top: -12vh; z-index: -4; background: -webkit-gradient(linear,left top, left bottom,from(#0084FF), to(#004280)); background: linear-gradient(to bottom,#0084FF, #004280); }
+.gradeshape2{ top: -130px; z-index: -2; background: -webkit-gradient(linear,left top, left bottom,from(#01365E), to(#012E50)); background: linear-gradient(to bottom,#01365E, #012E50); }
+.gradeshape3{ top: -100px; z-index: -3; background: -webkit-gradient(linear, left top, left bottom, from(#0084FF),to(#0084FF)); background: linear-gradient(to bottom, #0084FF,#0084FF);}
+.gradeshape4{ top: -60px; z-index: -4; background: -webkit-gradient(linear,left top, left bottom,from(#0084FF), to(#004280)); background: linear-gradient(to bottom,#0084FF, #004280); }
 
 .containshape {
 /*    overflow-x: hidden;*/
