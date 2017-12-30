@@ -14,10 +14,11 @@ p {
 }
 
 html {
+    background: -webkit-gradient(linear, right top, left top, from(#012F50), to(#003459));
     background: linear-gradient(to left, #012F50, #003459);
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
@@ -95,7 +96,7 @@ html {
 .intro{
     margin-top: 15vh;
     line-height: 30px;
-    position: relative;
+/*    overflow: hidden*/
 }
 .intro p{
 /*    margin-bottom: 5px;*/
@@ -196,6 +197,7 @@ html {
 }
 
 .title {
+    background: -webkit-gradient(linear, right top, left top, from(#012F50), to(#003459));
     background: linear-gradient(to left, #012F50, #003459);
     width: 110%;
     height: 100px;
@@ -260,6 +262,7 @@ html {
     -webkit-transition: .5s 0s ease-out max-height;
     transition: .5s 0s ease-out max-height;
     margin-bottom: 5px;
+    background: -webkit-gradient(linear, left top, right top, from(#003459), to(#012F50));
     background: linear-gradient(to right, #003459, #012F50)
 
 }
@@ -433,10 +436,12 @@ a.fb-message-blue:focus {
 
 .ctoa {
     font-size: 13px;
+    background: -webkit-gradient(linear,left top, right top,from(#C63648), to(#473452));
     background: linear-gradient(to right,#C63648, #473452);
     border-radius: 3px;
     padding:2px;
     margin: auto;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.27);
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.27);
     width: calc(90px - 1vw);
     height: 30px;
@@ -449,13 +454,16 @@ a.fb-message-blue:focus {
     
 }
 .gradshape {
+    -webkit-transform: rotate(39deg) translate(30px,-25px);
     transform: rotate(39deg) translate(30px,-25px);
     position: absolute;
     width: 300px;
     height: 475px;
     top: -25vh;
+    background: -webkit-gradient(linear,left top, left bottom,from(#011E34), to(#013C67));
     background: linear-gradient(to bottom,#011E34, #013C67);
     border-radius: 50px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0, 0.19);
     box-shadow: 0 3px 6px rgba(0,0,0, 0.19);
     z-index: -1;
     margin: auto;
@@ -463,12 +471,13 @@ a.fb-message-blue:focus {
     left: 0;
 }
 .gradeshapeflip{
+    -webkit-transform: rotate(310deg) translate(-50px,-65px);
     transform: rotate(310deg) translate(-50px,-65px);
-    transition: all 1s ease;
+/*    transition: all 1s ease;*/
 }
-.gradeshape2{ top: -18vh; z-index: -2; background: linear-gradient(to bottom,#01365E, #012E50); }
-.gradeshape3{ top: -14vh; z-index: -3; background: linear-gradient(to bottom, #0084FF,#0084FF);}
-.gradeshape4{ top: -10vh; z-index: -4; background: linear-gradient(to bottom,#0084FF, #004280); }
+.gradeshape2{ top: -18vh; z-index: -2; background: -webkit-gradient(linear,left top, left bottom,from(#01365E), to(#012E50)); background: linear-gradient(to bottom,#01365E, #012E50); }
+.gradeshape3{ top: -14vh; z-index: -3; background: -webkit-gradient(linear, left top, left bottom, from(#0084FF),to(#0084FF)); background: linear-gradient(to bottom, #0084FF,#0084FF);}
+.gradeshape4{ top: -10vh; z-index: -4; background: -webkit-gradient(linear,left top, left bottom,from(#0084FF), to(#004280)); background: linear-gradient(to bottom,#0084FF, #004280); }
 
 .containshape {
 /*    overflow-x: hidden;*/
