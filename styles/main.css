@@ -10,14 +10,14 @@ p {
 }
 
 .highlight {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 html {
-    background-color: #003459;
+    background: linear-gradient(to left, #012F50, #003459);
     padding: 0;
     margin: 0;
-    
+    overflow-x: hidden;
 }
 
 
@@ -28,6 +28,7 @@ html {
 
 .white {
     color: #F7F6F5;
+    
 }
 
 .red {
@@ -43,6 +44,7 @@ html {
     overflow: hidden;
     /*    height: 90vh;*/
     /*    width: 10vw;*/
+    
 }
 
 .main:before {
@@ -57,7 +59,7 @@ html {
     opacity: 0.14;
     background-image: url(../pic/Capture.JPG);
     background-repeat: no-repeat;
-    /*check if with no repeat it would look better.*/
+/*    check if with no repeat it would look better.*/
     background-position: 20% 0;
     -webkit-filter: blur(6px);
     filter: blur(6px);
@@ -90,14 +92,20 @@ html {
     background-position: center
 }
 
-.intro p {
-    margin-top: 25vh;
-    /*    width: 75%;*/
-    /*    font-size: 20px;*/
+.intro{
+    margin-top: 15vh;
     line-height: 30px;
-    padding: 0 0 0 5%;
+    position: relative;
 }
-
+.intro p{
+/*    margin-bottom: 5px;*/
+    width: 240px;
+    margin: auto;
+    font-size: 15px;
+/*    font-weight: bold;*/
+    line-height: 25px;
+    letter-spacing: 1px
+}
 .menu {
     position: absolute;
     right: 15px;
@@ -119,7 +127,7 @@ html {
     height: 45px;
     margin: auto;
     padding: 11px 0 0 11px;
-    margin-top: 30vh;
+    margin-top: 22vh;
     margin-bottom: 10vh;
 }
 
@@ -188,7 +196,7 @@ html {
 }
 
 .title {
-    background-color: #003459;
+    background: linear-gradient(to left, #012F50, #003459);
     width: 110%;
     height: 100px;
 
@@ -252,7 +260,7 @@ html {
     -webkit-transition: .5s 0s ease-out max-height;
     transition: .5s 0s ease-out max-height;
     margin-bottom: 5px;
-
+    background: linear-gradient(to right, #003459, #012F50)
 
 }
 
@@ -324,6 +332,7 @@ a.fb-message-blue:focus {
 .footer {
     text-align: center;
 }
+
 .hr{
     display: block;
     margin-left: auto;
@@ -421,3 +430,48 @@ a.fb-message-blue:focus {
 }
 
 /*End social media icons*/
+
+.ctoa {
+    font-size: 13px;
+    background: linear-gradient(to right,#C63648, #473452);
+    border-radius: 3px;
+    padding:2px;
+    margin: auto;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.27);
+    width: calc(90px - 1vw);
+    height: 30px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40vh;
+}
+.ctoa a{
+    text-decoration: none;
+    
+}
+.gradshape {
+    transform: rotate(39deg) translate(30px,-25px);
+    position: absolute;
+    width: 300px;
+    height: 475px;
+    top: -25vh;
+    background: linear-gradient(to bottom,#011E34, #013C67);
+    border-radius: 50px;
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.19);
+    z-index: -1;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+.gradeshapeflip{
+    transform: rotate(310deg) translate(-50px,-65px);
+    transition: all 1s ease;
+}
+.gradeshape2{ top: -18vh; z-index: -2; background: linear-gradient(to bottom,#01365E, #012E50); }
+.gradeshape3{ top: -14vh; z-index: -3; background: linear-gradient(to bottom, #0084FF,#0084FF);}
+.gradeshape4{ top: -10vh; z-index: -4; background: linear-gradient(to bottom,#0084FF, #004280); }
+
+.containshape {
+/*    overflow-x: hidden;*/
+    position: relative;
+    
+}
