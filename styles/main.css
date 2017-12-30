@@ -18,7 +18,7 @@ html {
     background: linear-gradient(to left, #012F50, #003459);
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
