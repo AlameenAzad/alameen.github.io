@@ -74,10 +74,11 @@ body {
     z-index: -9999;
 }
 
-.main h1 {
-    letter-spacing: 3px;
-    font-size: 22px;
-    padding: 10px
+.main img {
+/*    letter-spacing: 3px;*/
+/*    font-size: 22px;*/
+    padding: 23px 15px;
+    width: 130px;
 }
 
 .bg {
@@ -271,12 +272,12 @@ body {
     transition: .2s 0s ease-out max-height;
 
     background: -webkit-gradient(linear, left top, right top, from(#003459), to(#012F50));
-/*    background: linear-gradient(to right, #003459, #012F50);*/
+    /*    background: linear-gradient(to right, #003459, #012F50);*/
     width: 90%;
     margin: auto;
     margin-bottom: 5px;
     /*    transition: transform .5s;*/
-/*    background: linear-gradient(to left, #01365E, #012E50);*/
+    /*    background: linear-gradient(to left, #01365E, #012E50);*/
 }
 
 .p:hover {
@@ -346,6 +347,7 @@ a.fb-message-blue:focus {
 
 .footer {
     text-align: center;
+
 }
 
 .hr {
@@ -449,8 +451,8 @@ a.fb-message-blue:focus {
 
 .ctoa {
     font-size: 13px;
-    background: -webkit-gradient(linear, left top, right top, from(#C63648), to(#473452));
-    background: linear-gradient(to right, #C63648, #473452);
+
+    background: linear-gradient(to right, #141E30, #243B55);
     border-radius: 3px;
     padding: 2px;
     margin: auto;
@@ -468,22 +470,23 @@ a.fb-message-blue:focus {
 }
 
 .gradshape {
-    -webkit-transform: rotate(39deg) translate(85px, 10px);
-    transform: rotate(39deg) translate(85px, 10px);
     position: absolute;
     width: 320px;
     height: 550px;
     top: -190px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#011E34), to(#013C67));
-    background: linear-gradient(to bottom, #011E34, #013C67);
     border-radius: 50px;
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
-    z-index: -1;
     margin: auto;
     right: 0;
     left: 0;
     /*    transition: all 1s ease;*/
+}
+
+.gradeshape1 {
+    transform: rotate(39deg) translate(85px, 10px);
+    background: linear-gradient(to bottom, #011E34, #013C67);
+    z-index: -1;
 }
 
 .gradeshapeflip {
@@ -495,22 +498,140 @@ a.fb-message-blue:focus {
 .gradeshape2 {
     top: -130px;
     z-index: -2;
-    background: -webkit-gradient(linear, left top, left bottom, from(#01365E), to(#012E50));
+   
     background: linear-gradient(to bottom, #01365E, #012E50);
 }
 
 .gradeshape3 {
     top: -100px;
     z-index: -3;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0084FF), to(#0084FF));
+   
     background: linear-gradient(to bottom, #0084FF, #0084FF);
 }
 
 .gradeshape4 {
     top: -70px;
     z-index: -4;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0084FF), to(#004280));
+   
     background: linear-gradient(to bottom, #0084FF, #004280);
 }
 
-/* TODO: add media query to above 400px give gradeshape more width and adjust.*/
+/* TODO: add media query to above 400px give gradeshape more width and adjust. DONE*/
+
+@media (min-width: 768px) {
+    .content {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .main {
+        overflow: hidden;
+        height: 100vh;
+    }
+    .main:before {
+        left: auto;
+        right: calc(-35px - 10vw);
+        top: 0;
+        width: 800px;
+        height: 110%;
+        opacity: 0.55;
+        background-image: url(../pic/1.JPG);
+        filter: blur(0px);
+        background-position: center;
+        background-size: contain;
+
+
+    }
+    .menu {
+        right: 30px;
+    }
+    .main img {
+        padding: 21px 20px;
+        width: 160px;
+    }
+    .gradshape {
+        width: 70vw;
+        height: 70vw;
+        top: 0;
+        bottom: 0;
+        /*        margin: 10;*/
+        right: auto;
+        left: -50vw;
+        /*    transition: all 1s ease;*/
+        /*        transform-origin: top height;*/
+        /*        transform-origin: left width;*/
+    }
+    .gradeshape1 {
+        display: none;
+    }
+    .gradeshapeflip {
+        transform: rotate(45deg) translate(0px, 0px);
+/*                    transition: all 2s ease;*/
+        /*        right: 1000px*/
+    }
+
+    .gradeshape2 {
+        top: 0;
+        background: linear-gradient(180deg , #013C67, #011E34);
+        right: 20vw;
+        /*        box-shadow: none*/
+    }
+
+    .gradeshape3 {
+        top: 0;
+        background: linear-gradient(140deg, #0084FF, #004280);
+        right: 10vw;
+    }
+
+    .gradeshape4 {
+        top: 0;
+        background: linear-gradient(200deg, #0084FF, #003459);
+        right: 0vw;
+    }
+    .intro {
+        margin-top: 190px;
+        line-height: 30px;
+        /*    overflow: hidden*/
+        padding-left: 50px;
+    }
+
+    .intro p {
+
+        width: auto;
+/*        margin: 0;*/
+        font-size: 4vw;
+        /*    font-weight: bold;*/
+        line-height:normal;
+        margin-bottom: 2px;
+        font-weight: 600;
+/*        line-height: 40px;*/
+        
+    }
+    .ctoa {
+        font-size: 15px;
+        padding: 7px;
+        margin: 0;
+        width: 140px;
+        height: 40px;
+        margin-bottom: 238px;
+        margin-top: 20px;
+    }
+
+
+}
+
+@media (max-width: 970px) {
+    .main:before {
+        right: calc(-130px - 5vw);
+    }
+}
+
+
+
+
+@media (min-width: 1073px) {
+    .main:before {
+        right: calc(-170px + 5vw);
+    }
+}
