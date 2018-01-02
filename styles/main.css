@@ -458,10 +458,10 @@ a.fb-message-blue:focus {
     
 }
 .gradshape {
-    -webkit-transform: rotate(39deg) translate(70px,-15px);
-    transform: rotate(39deg) translate(100px,10px);
+    -webkit-transform: rotate(39deg) translate(85px,10px);
+    transform: rotate(39deg) translate(85px,10px);
     position: absolute;
-    width: 280px;
+    width: 320px;
     height: 550px;
     top: -190px;
     background: -webkit-gradient(linear,left top, left bottom,from(#011E34), to(#013C67));
@@ -473,18 +473,15 @@ a.fb-message-blue:focus {
     margin: auto;
     right: 0;
     left: 0;
+/*    transition: all 1s ease;*/
 }
 .gradeshapeflip{
-    -webkit-transform: rotate(310deg) translate(-90px,-25px);
-    transform: rotate(310deg) translate(-120px,-50px);
-    transition: all 1s ease;
+    -webkit-transform: rotate(310deg) translate(-105px,-40px);
+    transform: rotate(310deg) translate(-105px,-40px);
+/*    transition: all 1s ease;*/
 }
 .gradeshape2{ top: -130px; z-index: -2; background: -webkit-gradient(linear,left top, left bottom,from(#01365E), to(#012E50)); background: linear-gradient(to bottom,#01365E, #012E50); }
 .gradeshape3{ top: -100px; z-index: -3; background: -webkit-gradient(linear, left top, left bottom, from(#0084FF),to(#0084FF)); background: linear-gradient(to bottom, #0084FF,#0084FF);}
 .gradeshape4{ top: -70px; z-index: -4; background: -webkit-gradient(linear,left top, left bottom,from(#0084FF), to(#004280)); background: linear-gradient(to bottom,#0084FF, #004280); }
 
-.containshape {
-/*    overflow-x: hidden;*/
-    position: relative;
-    
-}
+/* TODO: add media query to above 400px give gradeshape more width and adjust.*/
