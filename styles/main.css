@@ -28,7 +28,7 @@ body {
 
 .txtshadow {
 
-    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .white {
@@ -42,6 +42,10 @@ body {
 
 .idk {
     color: #D9CB9E;
+}
+
+.blue {
+    color: #0084FF;
 }
 
 .main {
@@ -75,30 +79,13 @@ body {
 }
 
 .main img {
-/*    letter-spacing: 3px;*/
-/*    font-size: 22px;*/
+    /*    letter-spacing: 3px;*/
+    /*    font-size: 22px;*/
     padding: 23px 15px;
     width: 130px;
 }
 
-.bg {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    left: 0;
-    right: 0;
-    top: 25vh;
-    margin: auto;
-    text-align: center;
-    z-index: -1;
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-    /*    margin-top: 40vh;*/
-    /*    display: none;*/
-    background-image: url(../pic/bg.png);
-    background-repeat: no-repeat;
-    background-position: center
-}
+
 
 .intro {
     margin-top: 140px;
@@ -498,24 +485,32 @@ a.fb-message-blue:focus {
 .gradeshape2 {
     top: -130px;
     z-index: -2;
-   
+
     background: linear-gradient(to bottom, #01365E, #012E50);
 }
 
 .gradeshape3 {
     top: -100px;
     z-index: -3;
-   
+
     background: linear-gradient(to bottom, #0084FF, #0084FF);
 }
 
 .gradeshape4 {
     top: -70px;
     z-index: -4;
-   
+
     background: linear-gradient(to bottom, #0084FF, #004280);
 }
-
+.intro .hr {
+    display: none;
+}
+.hello{
+    display: none;
+}
+.socialmedia-top{
+    display: none;
+}
 /* TODO: add media query to above 400px give gradeshape more width and adjust. DONE*/
 
 @media (min-width: 768px) {
@@ -527,22 +522,23 @@ a.fb-message-blue:focus {
     }
     .main {
         overflow: hidden;
-        height: 100vh;
+        height: 200vh;
     }
     .main:before {
         left: auto;
         right: calc(-35px - 10vw);
         top: 0;
         width: 800px;
-        height: 110%;
+        height: 100vh;
         opacity: 0.55;
         background-image: url(../pic/1.png);
         filter: blur(0px);
         background-position: center;
         background-size: contain;
-
+        background-repeat: repeat-y;
 
     }
+
     .menu {
         right: 30px;
     }
@@ -551,13 +547,13 @@ a.fb-message-blue:focus {
         width: 160px;
     }
     .gradshape {
-        width: 70vw;
-        height: 70vw;
+        width: 950px;
+        height: 950px;
         top: 0;
-        bottom: 0;
+        
         /*        margin: 10;*/
         right: auto;
-        left: -50vw;
+        left: -110vw;;
         /*    transition: all 1s ease;*/
         /*        transform-origin: top height;*/
         /*        transform-origin: left width;*/
@@ -567,46 +563,46 @@ a.fb-message-blue:focus {
     }
     .gradeshapeflip {
         transform: rotate(45deg) translate(0px, 0px);
-/*                    transition: all 2s ease;*/
+        /*                    transition: all 2s ease;*/
         /*        right: 1000px*/
+        top: -125px
     }
 
     .gradeshape2 {
-        top: 0;
-        background: linear-gradient(180deg , #013C67, #011E34);
+        
+        background: linear-gradient(180deg, #013C67, #011E34);
         right: 20vw;
         /*        box-shadow: none*/
     }
 
     .gradeshape3 {
-        top: 0;
+        
         background: linear-gradient(140deg, #0084FF, #004280);
         right: 10vw;
     }
 
     .gradeshape4 {
-        top: 0;
+        
         background: linear-gradient(200deg, #0084FF, #003459);
         right: 0vw;
     }
     .intro {
-        margin-top: 190px;
+        margin-top: 160px;
         line-height: 30px;
         /*    overflow: hidden*/
-        padding-left: 50px;
+        padding-left: 40px;
     }
 
     .intro p {
 
         width: auto;
-/*        margin: 0;*/
-        font-size: 4vw;
+        /*        margin: 0;*/
+        font-size: 3vw;
         /*    font-weight: bold;*/
-        line-height:normal;
+        line-height: normal;
         margin-bottom: 2px;
-        font-weight: 600;
-/*        line-height: 40px;*/
-        
+        /*        font-weight: 00;*/
+        /*        line-height: 40px;*/
     }
     .ctoa {
         font-size: 15px;
@@ -614,14 +610,47 @@ a.fb-message-blue:focus {
         margin: 0;
         width: 140px;
         height: 40px;
-        margin-bottom: 238px;
+/*        margin-bottom: 23px;*/
         margin-top: 20px;
     }
+    /*Social media icons*/
+    .socialmedia-top {
+        position: absolute;
+        padding: 0 10px;
+        /*	margin: 5vh 0 0 .5vw;*/
+        width: 230px;
+        top: 94vh;
+        display: block;
+    }
 
+    .socialmedia-top i:hover {
+        transform: scale(1.5);
+    }
 
+    .icon {
+        
+
+        margin-left: 10px;
+
+    }
+.heading {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hello {
+    font-size: 8vw;
+    margin: 0;
+    margin-bottom: 35px;
+    margin-left: -5px;
+    display: block;
+}
+    .intro .hr{
+    display:block;
+}
 }
 
-@media (max-width: 970px) {
+@media (min-width: 920px) {
     .main:before {
         right: calc(-130px - 5vw);
     }
@@ -633,5 +662,18 @@ a.fb-message-blue:focus {
 @media (min-width: 1073px) {
     .main:before {
         right: calc(-170px + 5vw);
+    }
+}
+
+@media (min-width: 1266px) {
+    .gradshape {
+        left: -60vw;;
+    }
+}
+
+
+@media (min-width: 1155px) {
+    .gradshape {
+        left: -80vw;;
     }
 }
