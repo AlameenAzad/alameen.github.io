@@ -526,7 +526,7 @@ a.fb-message-blue:focus {
     }
     .main:before {
         left: auto;
-        right: calc(-35px - 10vw);
+        right: calc(-95px - 10vw);
         top: 0;
         width: 800px;
         height: 100vh;
@@ -650,9 +650,15 @@ a.fb-message-blue:focus {
 }
 }
 
-@media (min-width: 920px) {
-    .main:before {
-        right: calc(-130px - 5vw);
+@media (min-width: 900px) {
+    .gradshape {
+        left: calc(-170px - 80vw);
+    }
+}
+
+@media (min-width: 992px) {
+    .gradshape {
+        left: calc(-170px - 50vw);
     }
 }
 
@@ -665,6 +671,7 @@ a.fb-message-blue:focus {
     }
 }
 
+/*
 @media (min-width: 1266px) {
     .gradshape {
         left: -60vw;;
@@ -677,3 +684,4 @@ a.fb-message-blue:focus {
         left: -80vw;;
     }
 }
+*/
